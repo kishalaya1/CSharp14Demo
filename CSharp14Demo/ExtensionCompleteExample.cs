@@ -22,6 +22,10 @@ namespace CSharp14Demo
             public static bool IsSeniorDeveloper(int yearsOfExperience) =>
                 yearsOfExperience >= 5;
 
+            // FIX: Make IsPsuedoDeveloper a static method with a Developer parameter
+            public static bool IsPsuedoDeveloper(Developer developer) =>
+                developer?.Category == "Vibe Coder";
+
             public static string DefaultCategory => "General";
         }
     }   
