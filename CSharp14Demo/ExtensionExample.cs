@@ -32,6 +32,12 @@ namespace CSharp14Demo
 
                 return value.Substring(startIndex);
             }
+
+            /// <summary>
+            /// extension property to get character count of a string
+            /// </summary>
+            public int CharacterCount => value.Length;
+
         }
 
         #region Old Legacy Extension method

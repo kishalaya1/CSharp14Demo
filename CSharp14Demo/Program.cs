@@ -1,9 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Text.RegularExpressions;
 using CSharp14Demo;
+using CSharp14Demo.Entities;
+
 
 Console.WriteLine("Hello, World!");
 //PrintExtensionMembersDemo();
+//ExtensionCompleteExampleDemo()
 Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -34,9 +37,33 @@ static void PrintExtensionMembersDemo()
         Console.WriteLine();
     }
     Console.WriteLine("Clip characters demo end");
+    Console.WriteLine("----------------------------------");
+    Console.WriteLine("Character count demo start");
+    foreach (var s in examples)
+    {
+        var count = s?.CharacterCount ?? 0;
+        Console.WriteLine($"Original : {s ?? "<null>"}");
+        Console.WriteLine($"Character Count  : {count}");
+        Console.WriteLine();
+    }
+    Console.WriteLine("Character count demo end");
 
 }
 
+static void ExtensionCompleteExampleDemo()
+{
+    var dev = Developer.CreateDefault();
+    dev.YearsOfExperience = 20;
+    Console.WriteLine($"Developer Name: {dev.Name}");
+    Console.WriteLine($"Rate Per Hour: {dev.RatePerHour}");
+    Console.WriteLine($"Years Of Experience: {dev.YearsOfExperience}");
+    Console.WriteLine($"Category: {dev.Category}");
+    Console.WriteLine($"Created Date: {dev.CreatedDate}");
+    int experience = 3;
+    bool isSenior = Developer.IsSeniorDeveloper(experience);
+    Console.WriteLine($"Is developer with {experience} years of experience a senior developer? {isSenior}");
+    Console.WriteLine($"Default Category: {Developer.DefaultCategory}");
+}
 
 static void Demo()
 {
