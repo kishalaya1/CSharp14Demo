@@ -6,7 +6,8 @@ using CSharp14Demo.Entities;
 
 Console.WriteLine("Hello, World!");
 //PrintExtensionMembersDemo();
-ExtensionCompleteExampleDemo();
+//ExtensionCompleteExampleDemo();
+NullAssignmentDemo();
 //Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -67,6 +68,12 @@ static void ExtensionCompleteExampleDemo()
     Console.WriteLine($"Default Category: {Developer.DefaultCategory}");
 }
 
+static void NullAssignmentDemo()
+{
+     Tester tester = new Tester();
+     tester?.RatePerHour = 200;
+    Console.WriteLine("rate per hour set to " + tester?.RatePerHour.ToString());
+}   
 static void Demo()
 {
     //use this function to write any code and test new C# 14.0 features
