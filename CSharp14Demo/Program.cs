@@ -6,8 +6,8 @@ using CSharp14Demo.Entities;
 
 Console.WriteLine("Hello, World!");
 //PrintExtensionMembersDemo();
-//ExtensionCompleteExampleDemo()
-Demo();
+ExtensionCompleteExampleDemo();
+//Demo();
 static void PrintExtensionMembersDemo()
 {
     var examples = new[]
@@ -54,6 +54,7 @@ static void ExtensionCompleteExampleDemo()
 {
     var dev = Developer.CreateDefault();
     dev.YearsOfExperience = 20;
+    dev.Category = "Vibe Coder";
     Console.WriteLine($"Developer Name: {dev.Name}");
     Console.WriteLine($"Rate Per Hour: {dev.RatePerHour}");
     Console.WriteLine($"Years Of Experience: {dev.YearsOfExperience}");
@@ -62,6 +63,7 @@ static void ExtensionCompleteExampleDemo()
     int experience = 3;
     bool isSenior = Developer.IsSeniorDeveloper(experience);
     Console.WriteLine($"Is developer with {experience} years of experience a senior developer? {isSenior}");
+    Console.WriteLine($"Is the developer a Pseudo ? {(Developer.IsPsuedoDeveloper(dev) ? "Yes" : "No")}");
     Console.WriteLine($"Default Category: {Developer.DefaultCategory}");
 }
 
