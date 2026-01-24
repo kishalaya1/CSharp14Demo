@@ -7,7 +7,8 @@ using CSharp14Demo.Entities;
 Console.WriteLine("Hello, World!");
 //PrintExtensionMembersDemo();
 //ExtensionCompleteExampleDemo();
-NullAssignmentDemo();
+//NullAssignmentDemo();
+DemoOldFieldExample();
 //Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -74,6 +75,10 @@ static void NullAssignmentDemo()
      tester?.RatePerHour = 200;
     Console.WriteLine("rate per hour set to " + tester?.RatePerHour.ToString());
 }   
+static void DemoOldFieldExample()
+{
+    FieldExample.Demo();
+}
 static void Demo()
 {
     //use this function to write any code and test new C# 14.0 features
