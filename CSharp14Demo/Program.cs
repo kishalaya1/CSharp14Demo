@@ -1,14 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Text.RegularExpressions;
 using CSharp14Demo;
 using CSharp14Demo.Entities;
+using System;
+using System.Text.RegularExpressions;
 
 
 Console.WriteLine("Hello, World!");
 //PrintExtensionMembersDemo();
 //ExtensionCompleteExampleDemo();
-//NullAssignmentDemo();
-DemoOldFieldExample();
+NullAssignmentDemo();
+//DemoOldFieldExample();
 //Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -71,13 +72,15 @@ static void ExtensionCompleteExampleDemo()
 
 static void NullAssignmentDemo()
 {
-     Tester tester = new Tester();
-     tester?.RatePerHour = 200;
-    Console.WriteLine("rate per hour set to " + tester?.RatePerHour.ToString());
+    Console.WriteLine("Null assignment demo start!");
+    NullAssignmentExample.NullAssignmentDemo();
+    Console.WriteLine("Null assignment demo end!");
 }   
 static void DemoOldFieldExample()
 {
+    Console.WriteLine("field keyword demo start!");
     FieldExample.Demo();
+    Console.WriteLine("field keyword demo end!");
 }
 static void Demo()
 {
