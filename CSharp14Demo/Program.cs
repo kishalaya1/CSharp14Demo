@@ -8,8 +8,9 @@ using System.Text.RegularExpressions;
 Console.WriteLine("Hello, World!");
 //PrintExtensionMembersDemo();
 //ExtensionCompleteExampleDemo();
-NullAssignmentDemo();
+//NullAssignmentDemo();
 //DemoOldFieldExample();
+LambdaParamDemo();
 //Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -81,6 +82,12 @@ static void DemoOldFieldExample()
     Console.WriteLine("field keyword demo start!");
     FieldExample.Demo();
     Console.WriteLine("field keyword demo end!");
+}
+static void LambdaParamDemo()
+{
+    Console.WriteLine("Lambda parameters demo start!");
+    LambdaParamExample.Demo();
+    Console.WriteLine("Lambda parameters demo end!");
 }
 static void Demo()
 {
