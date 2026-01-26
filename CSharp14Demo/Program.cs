@@ -10,7 +10,8 @@ Console.WriteLine("Hello, World!");
 //ExtensionCompleteExampleDemo();
 //NullAssignmentDemo();
 //DemoOldFieldExample();
-LambdaParamDemo();
+//LambdaParamDemo();
+UnboundGenericNameOfDemo();
 //Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -88,6 +89,12 @@ static void LambdaParamDemo()
     Console.WriteLine("Lambda parameters demo start!");
     LambdaParamExample.Demo();
     Console.WriteLine("Lambda parameters demo end!");
+}
+static void UnboundGenericNameOfDemo()
+{
+    Console.WriteLine("Unbound generic nameof demo start!");
+    UnboundGenericNameOfExample.Demo();
+    Console.WriteLine("Unbound generic nameof demo end!");
 }
 static void Demo()
 {
