@@ -11,7 +11,8 @@ Console.WriteLine("Hello, World!");
 //NullAssignmentDemo();
 //DemoOldFieldExample();
 //LambdaParamDemo();
-UnboundGenericNameOfDemo();
+//UnboundGenericNameOfDemo();
+SpanImplicitConversionDemo();
 //Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -95,6 +96,12 @@ static void UnboundGenericNameOfDemo()
     Console.WriteLine("Unbound generic nameof demo start!");
     UnboundGenericNameOfExample.Demo();
     Console.WriteLine("Unbound generic nameof demo end!");
+}
+static void SpanImplicitConversionDemo()
+{
+    Console.WriteLine("Span<T> / ReadOnlySpan<T> implicit conversions demo start!");
+    SpanImplicitConversionExample.Demo();
+    Console.WriteLine("Span<T> / ReadOnlySpan<T> implicit conversions demo end!");
 }
 static void Demo()
 {
