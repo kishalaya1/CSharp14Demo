@@ -12,7 +12,8 @@ Console.WriteLine("Hello, World!");
 //DemoOldFieldExample();
 //LambdaParamDemo();
 //UnboundGenericNameOfDemo();
-SpanImplicitConversionDemo();
+//SpanImplicitConversionDemo();
+PartialEventsandConstructorsDemo();
 //Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -102,6 +103,12 @@ static void SpanImplicitConversionDemo()
     Console.WriteLine("Span<T> / ReadOnlySpan<T> implicit conversions demo start!");
     SpanImplicitConversionExample.Demo();
     Console.WriteLine("Span<T> / ReadOnlySpan<T> implicit conversions demo end!");
+}
+static void PartialEventsandConstructorsDemo()
+{
+    Console.WriteLine("Partial events and constructors demo start!");
+    PartialEventsandConstructors.Demo();
+    Console.WriteLine("Partial events and constructors demo end!");
 }
 static void Demo()
 {
