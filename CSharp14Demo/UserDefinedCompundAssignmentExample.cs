@@ -70,7 +70,7 @@ namespace CSharp14Demo
 
         }
         public static void MovieDemo() {
-            var movie = new Movie("Interstellar", "Nolan", 2014, 8);
+            var movie = new Movie("Interstellar", "Christopher Nolan", 2014, 8);
             movie += 2;  // Rating becomes 10
         }
         public static void Vector2Demo() {
