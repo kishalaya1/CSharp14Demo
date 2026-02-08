@@ -13,7 +13,8 @@ Console.WriteLine("Hello, World!");
 //LambdaParamDemo();
 //UnboundGenericNameOfDemo();
 //SpanImplicitConversionDemo();
-PartialEventsandConstructorsDemo();
+//PartialEventsandConstructorsDemo();
+UserDefinedCompoundAssignmentOperatorsDemo();
 //Demo();
 static void PrintExtensionMembersDemo()
 {
@@ -109,6 +110,12 @@ static void PartialEventsandConstructorsDemo()
     Console.WriteLine("Partial events and constructors demo start!");
     PartialEventsandConstructors.Demo();
     Console.WriteLine("Partial events and constructors demo end!");
+}
+static void UserDefinedCompoundAssignmentOperatorsDemo()
+{
+    Console.WriteLine("---User defined compound assignment operators demo start!---");
+    UserDefinedCompundAssignmentExample.Demo();
+    Console.WriteLine("---User defined compound assignment operators demo end!---");
 }
 static void Demo()
 {
