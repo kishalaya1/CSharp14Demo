@@ -1,0 +1,17 @@
+﻿#!/usr/bin/dotnet run
+#:sdk Microsoft.NET.Sdk.Web
+#:package Microsoft.AspNetCore.OpenApi@10.0.0
+
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddOpenApi();
+
+var app = builder.Build();
+
+app.MapGet("/", () => "Hello from file-based web app!");
+app.MapGet("/time", () => new { 
+    current = DateTime.Now, 
+    utc = DateTime.UtcNow 
+});
+
+app.Run();
+

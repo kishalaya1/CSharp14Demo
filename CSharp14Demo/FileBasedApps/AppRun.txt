@@ -1,0 +1,4 @@
+﻿//demo to show  run a file-based app with dotnet run. 
+
+#!/usr/bin/env dotnet run
+Console.WriteLine("Hello");
