@@ -115,6 +115,8 @@ static void UserDefinedCompoundAssignmentOperatorsDemo()
 {
     Console.WriteLine("---User defined compound assignment operators demo start!---");
     UserDefinedCompundAssignmentExample.Demo();
+    //UserDefinedCompundAssignmentExample.Vector2Demo();
+    //UserDefinedCompundAssignmentExample.MovieDemo();
     Console.WriteLine("---User defined compound assignment operators demo end!---");
 }
 static void Demo()

@@ -71,15 +71,18 @@ namespace CSharp14Demo
         }
         public static void MovieDemo() {
             var movie = new Movie("Interstellar", "Christopher Nolan", 2014, 8);
+            Console.WriteLine("Before compound assignment value : " + movie.Rating);    
             movie += 2;  // Rating becomes 10
+            Console.WriteLine("After compound assignment value : " + movie.Rating);
         }
         public static void Vector2Demo() {
             Vector2 a = new Vector2 { X = 1, Y = 2 };
             Vector2 b = new Vector2 { X = 3, Y = 4 };
-
-           // Uses the + operator
+            Console.WriteLine($"Initial Value of a.X  : {a.X} Value of a.Y : {a.Y}");
+            Console.WriteLine($"Value of b.X  : {b.X} Value of b.Y : {b.Y}");
+            // Uses the += operator
             a += b;
-            Console.WriteLine($"Value of a.X  : { a.X} Value of a.Y : { a.Y}");
+            Console.WriteLine($"After compound assignment operation a += b  Value of a.X  : { a.X} Value of a.Y : { a.Y}");
         }
     }
 }
